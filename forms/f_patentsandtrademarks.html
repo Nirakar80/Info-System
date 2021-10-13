@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Patents and Trademarks Form</title>
+   <link rel = "stylesheet" href = "style.css">
+ </head>
+  <body>
+    <div class="main">
+      <h1>Patents and Trademarks Form</h1><hr>
+      <br>
+      <form action="p_patentsandtrademarks.php" method="post">
+        <label> Patent Title:</label>
+        <input type="text" name="patentTitle" maxlength="100" size="15"/><br><br>
+        
+        <label>Status:</label>
+        <select name="status" id="status">
+          <option value="---">- - - </option>
+          <option value="Applied For">Applied For</option>
+          <option value="Granted">Granted</option>
+          <option value="Denied">Denied</option>
+        </select><br><br>
+        
+        <label> Year Submitted:</label>
+        <input type="text" name="yearSubmitted" maxlength="11" size="15"/><br><br>
+        
+        <label> Academic Year:</label>
+        <input type="text" name="academicYear" maxlength="11" size="15"/><br><br>
+        
+        <label>Research Type:</label>
+        <select name="researchType" id="researchType">
+          <option value="---">- - - </option>
+          <option value="Scholarship of Discovery">Scholarship of Discovery</option>
+          <option value="Scholarship of Application">Scholarship of Application</option>
+          <option value="Scholarship of Teaching">Scholarship of Teaching</option>
+          <option value="Scholarship of Integration">Scholarship of Integration</option>
+          <option value="Not counted as Separate Intellectual Contribution">Not counted as Separate Intellectual Contribution</option>
+        </select><br><br>
+        
+        <label> Description: </label><br>
+        <textarea type="textarea" rows="11" cols ="80" name="description" maxlength="250"></textarea><br><br>
+        <input type="submit" name="submit" value="Submit"/>
+      </form>
+    </div> 
+    </body>
+    </html> 

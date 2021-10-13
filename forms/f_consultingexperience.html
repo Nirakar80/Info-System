@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> FacInfo </title>
+   <link rel="stylesheet" href="style.css">
+ </head>
+  <body>
+
+    <div class="main">
+
+      <h1> Consulting Experience </h1><hr>
+      <p> Please fill all the fields below. </p>
+
+      <form action="p_consultingexperience.php" method="post">
+
+        <label> Type of Activity: </label>
+        <input type="text" name="activity"/><br>
+
+        <label> Company/Organization: </label>
+        <input type="text" name="company"/><br>
+
+        <label> Academic Year: </label>
+        <input type="text" name="ayear"/><br>
+
+        <label> Description (optional): </label>
+        <textarea type="text" rows="10" name="desc"></textarea><br>
+        
+        <input type="submit" name="submit" value="Submit"/>
+      </form>
+
+    </div> 
+
+  </body>
+</html>

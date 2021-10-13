@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> FacInfo </title>
+   <link rel="stylesheet" href="style.css">
+ </head>
+  <body>
+    <div class="main">
+
+      <h1> Community Service </h1><hr>
+      <p> Please fill all the fields below. </p>
+
+      <form action="p_communityservice.php" method="post">
+
+        <label> Activity Type: </label>
+        <select name="activity" id="activity">
+            <option value="---">- - - </option>
+            <option value="Committee Member">Committee Member</option>
+            <option value="Committte Chair">Committte Chair</option>
+            <option value="Executive Board Member">Executive Board Member</option>
+            <option value="Other Community Service Activities">Other Community Service Activities</option>
+        </select><br>
+
+        <label> Organization/Institution: </label>
+        <input type="text" name="org"/><br>
+
+        <label> Academic Year: </label>
+        <input type="text" name="ayear"/><br>
+
+        <label> Scope: </label>
+        <select name="scope" id="scope">
+            <option value="---">- - - </option>
+            <option value="Department">Department</option>
+            <option value="College">College</option>
+            <option value="University">University</option>
+            <option value="State-Wide">State-Wide</option>
+            <option value="Local">Local</option>
+            <option value="Virtual">Virtual</option>
+        </select><br>
+
+        <label> Description (optional): </label>
+        <textarea type="text" rows="10" name="desc"></textarea><br>
+        
+        <input type="submit" name="submit" value="Submit"/>
+
+      </form>
+
+    </div> 
+
+  </body>
+</html>

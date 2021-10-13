@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Conference Presentations</title>
+   <link rel = "stylesheet" href = "style.css">
+ </head>
+  <body>
+    <div class="main">
+      <h1>Conference Presentations</h1><hr>
+      <br>
+      <form action="p_conferencepresentations.php" method="post">
+        <label> Title of Presentation:</label>
+        <input type="text" name="titleOfPresentation" maxlength="100" size="15"/><br><br>
+        
+        <label> Conferece/Event:</label>
+        <input type="text" name="conference" maxlength="11" size="15"/><br><br>
+        
+        <label> Type:</label>
+        <select name="type" id="type">
+          <option value="---">- - - </option>
+          <option value="Academic">Academic</option>
+          <option value="Professional">Professional</option>
+        </select><br><br>
+        
+        <label> Status:</label>
+        <select name="status" id="status">
+          <option value="---">- - - </option>
+          <option value="Accepted">Accepted</option>
+          <option value="Presented">Presented</option>
+        </select><br><br>
+        
+        <label> Year Acccepted:</label>
+        <input type="text" name="yearAccepted" maxlength="11" size="15"/><br><br>
+        
+        <label> Academic Year:</label>
+        <input type="text" name="academicYear" maxlength="11" size="15"/><br><br>
+        
+        <label>Research Type:</label>
+        <select name="researchType" id="researchType">
+          <option value="---">- - - </option>
+          <option value="Scholarship of Discovery">Scholarship of Discovery</option>
+          <option value="Scholarship of Application">Scholarship of Application</option>
+          <option value="Scholarship of Teaching">Scholarship of Teaching</option>
+          <option value="Scholarship of Integration">Scholarship of Integration</option>
+          <option value="Not counted as Separate Intellectual Contribution">Not counted as Separate Intellectual Contribution</option>
+        </select><br><br>
+        
+        <label> Scope:</label> 
+        <select name="scope" id="scope">
+          <option value="---" >- - - </option>
+          <option value="International">International</option>
+          <option value="National">National</option>
+          <option value="State">State</option>
+          <option value="Regional">Regional</option>
+          <option value="Local">Local</option>
+          <option value="Virtual">Virtual</option>
+        </select><br><br>
+        
+        <label> Refereed: </label>
+        <select name="refereed" id="refereed">
+          <option value="---">- - - </option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select><br><br>
+        
+        <label>Presentation Type:</label>
+        <select name="presentationType" id="presentationType">
+          <option value="---">- - - </option>
+          <option value="Independent Paper">Paper(Independent)</option>
+          <option value="Symposium Paper">Paper(Part of Symposium)</option>
+          <option value="Exhibit">Exhibit</option>
+          <option value="Podium Presentation">Podium Presentation</option>
+          <option value="Roundtable">Round-Table Discussion</option>
+          <option value="Symposium">Symposium</option>
+          <option value="Workshop">Workshop</option>
+          <option value="Virtual">Virtual</option>
+        </select><br><br>       
+        
+        <label> Description: </label><br>
+        <textarea type="textarea" rows="11" cols ="80" name="description" maxlength="250"></textarea><br><br>
+        <input type="submit" name="submit" value="Submit"/>
+      </form>
+    </div> 
+    </body>
+    </html> 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> FacInfo </title>
+   <link rel="stylesheet" href="style.css">
+ </head>
+  <body>
+    <div class="main">
+      <h1> Professional Memberships </h1><hr>
+      <p> Please fill all the fields below. </p>
+      <form action="p_professionalmemberships.php" method="post">
+        <label> Professional Membership: </label>
+        <input type="text" name="proMember"/><br>
+        <label> Year(s): </label>
+        <input type="text" name="ayear"/><br>
+        <label> Scope : </label>
+        <select name="scope" id="scope">
+            <option value="---">- - - </option>
+            <option value="International">International</option>
+            <option value="National">National</option>
+            <option value="State">State</option>
+            <option value="Regional">Regional</option>
+            <option value="Local">Local</option>
+            <option value="Virtual">Virtual</option>
+        </select><br>
+        <label> Description (optional): </label>
+        <textarea type="text" rows="10" name="desc"></textarea><br>
+        <input type="submit" name="submit" value="Submit"/>
+      </form>
+    </div>  
+    </body>
+    </html>

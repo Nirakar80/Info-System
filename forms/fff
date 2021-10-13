@@ -1,0 +1,10 @@
+	<td>".$row['ID']."</td></tr><tr>
+	<td>".$row['Category']."</td></tr><tr>
+        <td>".$row['Title']."</td></tr><tr>
+	<td>".$row['sStatus']."</td></tr><tr>
+        <td><a href='https://www.w3schools.com'>".$row['YearContracted']."</td></tr><tr>
+	<td>".$row['ResearchType']."</td></tr><tr>
+	<td>".$row['Refereed']."</td></tr><tr>
+	<td>".$row['sDescription']."</td></tr><tr>
+	<td>".$row['FacultyID']."</td></tr><tr>
+        <td>".$row['Revision']."</td>

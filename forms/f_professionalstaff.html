@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> FacInfo </title>
+   <link rel="stylesheet" href="style.css">
+ </head>
+  <body>
+    <div class="main">
+      <h1> Professional Staff List </h1><hr>
+      <p> Please fill all the fields below. </p>
+      <form action="p_professionalstaff.php" method="post">
+        <label> Staff ID: </label>
+        <input type="text" name="staffID"/><br>
+        <label> First Name: </label>
+        <input type="text" name="fname"/><br>
+        <label> Middle Name/Initial: </label>
+        <input type="text" name="mname"/><br>
+        <label> Last Name: </label>
+        <input type="text" name="lname"/><br>
+        <label> Caldwell Email: </label>
+        <input type="text" name="cemail"/><br>
+        <label> Status: </label>
+        <select name="status" id="status">
+            <option value="---">- - -</option>
+            <option value="Full-Time(Salary)">Full-Time(Salary)</option>
+            <option value="Full-Time(Hourly)">Full-Time(Hourly)</option>
+            <option value="Part-Time">Part-Time</option>
+        </select><br>
+        <label> High Degree: </label>
+        <input type="text" name="highDegree"></input><br>
+        <label> Year Awarded: </label>
+        <input type="text" name="yearAwarded"></input><br>
+        <label> College/University: </label>
+        <input type="text" name="college"></input><br>
+        <label> Hire Term: </label>
+        <select name="hireTerm" id="hireTerm">
+            <option value="---">- - -</option>
+            <option value="fall">Fall</option>
+            <option value="winter">Winter</option>
+            <option value="spring">Spring</option>
+            <option value="summer">Summer</option>
+        </select><br>
+        
+        <label> Rank: </label>
+        <select name="rank" id="rank">
+            <option value="---">- - -</option>
+            <option value="Adjunct Lecturer" >Adjunct Lecturer</option>
+            <option value="Assistant Professor" >Assistant Professor</option>
+            <option value="Associate Professor" >Associate Professor</option>
+            <option value="Professor" >Professor</option>
+            <option value="Staff" >Staff</option>
+        </select><br>
+
+        <input type="submit" name="submit" value="Submit"/>
+      </form>
+    </div>  
+    </body>
+    </html>

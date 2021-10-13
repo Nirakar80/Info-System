@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+
+}
+
+
+/* Navigation Bar Styling */
+.navbar{
+    height: 40px;
+
+}
+
+
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    overflow: hidden;
+    background-color:#008080;
+  }
+
+
+.navbar li{
+        float: right;
+      }
+
+
+.navbar a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+      }
+
+
+.navbar li a:hover {
+    background-color: #00A36C;
+    height: 40px;
+      }
+
+
+
+/* Logo styling */
+.header{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.header img{
+    width: 400px;
+    height: 100px;
+}
+
+
+.welcome-message{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+
+/* panel Styling */
+.panel{
+    margin: 50px 10% 20% 10%;
+    display: flex;
+    border-radius: 4px;
+    justify-content: center;
+    
+}
+
+
+/* Carrd */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px; /* 5px rounded corners */
+    padding: 10px 60px 10px 60px;
+    width: 350px;
+    margin: 10px;
+    background-color: #008080;
+  }
+  
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+
+.card label {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+    font-size: 20px;
+    color: white;
+
+}
+
+.card h2{
+  color: white;
+  font-size: 35px;
+  
+}
+
+.card a{
+  color: white;
+  font-size: 18px;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+}
+
+
+.card a:hover{
+  color: orange;
+  text-decoration: underline;
+}
+
+
+.card input, textarea, select {
+    border-radius: 5px;
+    height: 30px;
+    width: 350px; 
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+
+.card input[type=submit]{
+    display: flex;
+    background-color: white;
+    font-size: 18px;
+    color: black;
+    margin: 1em auto;
+    margin-bottom: 1em;
+    justify-content: center;
+    width: 125px;
+    height: 40px;
+    border: 3px solid #0096FF;
+  }
+  
+  
+  .card input[type=submit]:hover{
+    background-color: #0096FF;
+    color: white;
+  }

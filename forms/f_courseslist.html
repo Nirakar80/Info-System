@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> FacInfo </title>
+   <link rel="stylesheet" href="style.css">
+ </head>
+  <body>
+    <div class="main">
+      <h1> Courses List </h1><hr>
+      <p> Please fill all the fields below. </p>
+      <form action="p_courseslist.php" method="post">
+        <label> BU/CS: </label>
+        <select name="bucs" id="bucs">
+            <option value="---">- - -</option>
+            <option value="BU">BU</option>
+            <option value="CS">CS</option> 
+        </select><br>
+        <label> Course Number: </label>
+        <input type="text" name="cnumber"/><br>
+        <label> Course Title: </label>
+        <input type="text" name="ctitle"/><br>
+        <label> Course Description (optional): </label>
+        <textarea type="text" rows="10" name="cdesc"></textarea><br>
+        <label> Learning Objectives (optional): </label>
+        <textarea type="text" rows="10" name="learnObj"></textarea><br>
+        <input type="submit" name="submit" value="Submit"/>
+      </form>
+    </div>  
+    </body>
+    </html>

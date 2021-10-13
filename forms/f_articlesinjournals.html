@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Articles in Journals Form</title>
+   <link rel = "stylesheet" href = "style.css">
+ </head>
+  <body>
+    <div class="main">
+      <h1> Articles in Journals Form</h1><hr>
+      <br>
+      <form action="p_articlesinjournals.php" method="post">
+        <label> Title of Article: </label>
+        <input  type="text" name="titleOfArticle" maxlength="100" size="100"/><br><br>
+        <label> Periodical:</label>
+        <input type="text" name="periodical" maxlength="30" size="30"/><br><br>
+        <label> Status:</label>
+        <select name="status" id="status">
+          <option value="---">- - - </option>
+          <option value="accepted">Accepted</option>
+          <option value="published">Published</option>
+          <option value="underReview">Under Review</option>
+        </select><br><br>
+        <label> Year Acccepted:</label>
+        <input type="text" name="yearAccepted" maxlength="4" size="15"/><br><br>
+        <label> Academic Year:</label>
+        <input type="text" name="academicYear" maxlength="4" size="15"/><br><br>
+        <label> Research Type:</label>
+        <select name="researchType" id="researchType">
+          <option value="---">- - - </option>
+          <option value="sd">Scholarship of Discovery</option>
+          <option value="sa">Scholarship of Application</option>
+          <option value="st">Scholarship of Teaching</option>
+          <option value="si">Scholarship of Integration</option>
+          <option value="nic">Not counted as Separate Intellectual Contribution</option>
+        </select><br><br>
+        <label> Type of Activity:</label>
+        <select name="typeOfActivity" id="typeOfActivity">
+          <option value="---">- - - </option>
+          <option value="circular">Circular/Newsletter</option>
+          <option value="academic">Journal: Academic</option>
+          <option value="inHouse">Journal: In-House</option>
+          <option value="pedagogical">Pedagogical</option>
+          <option value="professional">Journal: Professional/Practitioner</option>
+          <option value="note">Note/Abstract</option>
+          <option value="review">Review/Critique/Discussion</option>
+          <option value="technological">Technological</option>
+         </select><br><br>
+        <label> Refereed: </label>
+        <select name="refereed" id="refereed">
+          <option value="---">- - - </option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select><br><br>
+        <label> Article Description: </label><br>
+        <textarea type="textarea" rows="10" cols="80" name="articleDescription" maxlength="250"></textarea><br><br>
+        <input type="submit" name="submit" value="Submit"/>
+      </form>
+    <div class="main">
+  </body>
+</html> 

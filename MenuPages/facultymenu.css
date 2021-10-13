@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+
+}
+
+
+/* Navigation Bar Styling */
+.navbar{
+    height: 40px;
+
+}
+
+
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    overflow: hidden;
+    /* background-color:#0096FF; */
+    background-color:#008080;
+  }
+
+
+.navbar li{
+        float: right;
+      }
+
+
+.navbar a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+      }
+
+
+.navbar li a:hover {
+        /* background-color: #0437F2; */
+        background-color: #00A36C;
+        height: 40px;
+      }
+
+
+
+/* Logo styling */
+.header{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.header img{
+    width: 400px;
+    height: 100px;
+}
+
+
+
+/* panel Styling */
+.panel{
+    margin: 50px 10% 20% 10%;
+    display: grid;
+    border-radius: 4px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+
+
+/* Carrd */
+.panel .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    padding: 0;
+    width: 340px;
+    margin: 20px;
+    
+  }
+  
+
+.card img{
+    border-radius: 5px 5px 0 0;
+  }
+
+
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+
+.container {
+    padding: 0px;
+  }
+
+
+/* Table styling */
+.container table{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+.container td{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  height: 30px;
+}
+
+
+.container th{
+    color: white;
+    /* background-color: #0096FF; */
+    background-color:#008080;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    height: 40px;
+  }
+
+
+  .container tr:nth-child(even){
+  background-color: whitesmoke;
+}
+
+
+.container a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+  

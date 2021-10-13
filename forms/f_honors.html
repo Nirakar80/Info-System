@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> FacInfo </title>
+   <link rel="stylesheet" href="style.css">
+ </head>
+  <body>
+
+    <div class="main">
+
+      <h1> Honors, Awards, Scholarships </h1><hr>
+      <p> Please fill all the fields below. </p>
+
+      <form action="p_honors.php" method="post">
+
+        <label> Title: </label>
+        <input type="text" name="title"/><br>
+
+        <label> Company/Organization: </label>
+        <input type="text" name="org"/><br>
+
+        <label> Academic Year: </label>
+        <input type="text" name="ayear"/><br>
+
+        <label> Type: </label>
+        <select name="type" id="type">
+            <option value="---" readonly="true" hidden="true">- - - </option>
+            <option value="Honor">Honor</option>
+            <option value="Award">Award</option>
+            <option value="Scholarship">Scholarship</option>
+        </select><br>
+
+        <label> Category: </label>
+        <select name="category" id="category">
+            <option value="---" readonly="true" hidden="true">- - - </option>
+            <option value="Research">Research</option>
+            <option value="Teaching">Teaching</option>
+            <option value="Service">Service</option>
+            <option value="Lifetime">Lifetime</option>
+            <option value="Other">Other</option>
+        </select><br>
+
+        <label> Status: </label>
+        <select name="status" id="status">
+            <option value="---" readonly="true" hidden="true">- - - </option>
+            <option value="Research">Received</option>
+            <option value="Teaching">Nominated</option>
+        </select><br>
+
+        <label> Description (optional): </label>
+        <textarea type="text" rows="10" name="desc"></textarea><br>
+
+        <input type="submit" name="submit" value="Submit"/>
+
+      </form>
+
+    </div>  
+  </body>
+</html>

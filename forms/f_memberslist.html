@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> FacInfo </title>
+   <link rel="stylesheet" href="style.css">
+ </head>
+  <body>
+    <div class="main">
+      <h1> Members List </h1><hr>
+      <p> Please fill all the fields below. </p>
+      <form action="p_memberslist.php" method="post">
+        <label> Member ID: </label>
+        <input type="text" name="memberID"/><br>
+        <label> First Name: </label>
+        <input type="text" name="fname"/><br>
+        <label> Middle Name/Initial: </label>
+        <input type="text" name="mname"/><br>
+        <label> Last Name: </label>
+        <input type="text" name="lname"/><br>
+        <label> Caldwell Email: </label>
+        <input type="text" name="cemail"/><br>
+        <hr>
+        <label> Hire Term: </label>
+        <select name="hireTerm" id="hireTerm">
+            <option value="---">- - -</option>
+            <option value="fall">Fall</option>
+            <option value="winter">Winter</option>
+            <option value="spring">Spring</option>
+            <option value="summer">Summer</option>
+        </select><br>
+        <label> Member Status: </label>
+        <select name="mstatus" id="mstatus">
+            <option value="---">- - -</option>
+            <option value="Tenured">Tenured</option>
+            <option value="TenureTrack">Tenure Track</option>
+            <option value="Non-Tenure">Non-Tenure Track</option>
+        </select><br>
+        <label> Involvement: </label>
+        <select name="involve" id="involve">
+            <option value="---">- - -</option>
+            <option value="Participating">Participating</option>
+            <option value="Supporting">Supporting</option>
+            <option value="NA">N/A</option>
+        </select><br>
+        <label> Qualification: </label>
+        <select name="qualf" id="qualf">
+            <option value="---">- - -</option>
+            <option value="AQ">Academically Qualified (AQ)</option>
+            <option value="PQ">Professionally Qualified (PQ)</option>
+            <option value="Both">Both</option>
+            <option value="None">None</option>
+        </select><br>
+        <hr>
+        <label> High Degree: </label>
+        <input type="text" name="highDegree"></input><br>
+        <label> Year Awarded: </label>
+        <input type="text" name="yearAwarded"></input><br>
+        <label> College/University: </label>
+        <input type="text" name="college"></input><br>
+        <label> Rank: </label>
+        <select name="rank" id="rank">
+            <option value="---">- - -</option>
+            <option value="Adjunct Lecturer">Adjunct Lecturer</option>
+            <option value="Assistant Professor">Assistant Professor</option>
+            <option value="Associate Professor">Associate Professor</option>
+            <option value="Professor">Professor</option>
+            <option value="Staff">Staff</option>
+        </select><br>
+        <input type="submit" name="submit" value="Submit"/>
+      </form>
+    </div>  
+    </body>
+    </html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Books, Monograph, Compilation or Manual/Guide Form</title>
+   <link rel = "stylesheet" href = "NSstyle.css">
+ </head>
+  <body>
+      <div>
+      <h1>Books, Monograph, Compilation or Manual/Guide Form</h1><hr>
+      <br>
+      <form action="ibooks.php" method="post">
+        
+        <label> Category:</label>
+        <select name="category" id="category">
+          <option value="book" selected>Book</option>
+          <option value="monograph">Monograph</option>
+          <option value="compilation">Compilation</option>
+          <option value="manual">Manual/Guide</option>
+        </select><br><br>
+        <label> Title:</label>
+        <input type="text" name="title" maxlength="100" size="15"/><br><br>
+        <label>Status:</label>
+        <select name="status" id="status">
+          <option value="draft">Draft</option>
+          <option value="proposed">Proposed</option>
+          <option value="underContract">Under Contract</option>
+          <option value="underReview">Under Review</option>
+          <option value="accepted" selected>Accepted</option>
+          <option value="inPress">In Press</option>
+          <option value="published">Published</option>
+          <option value="ebook">E-Book</option>
+        </select><br><br>
+        <label> Year Contracted:</label>
+        <input type="text" name="yearContracted" maxlength="4" size="15"/><br><br>
+        <label> Academic Year:</label>
+        <input type="text" name="academicYear" maxlength="4" size="15"/><br><br>
+        <label>Research Type:</label>
+        <select name="researchType" id="researchType">
+            <option value="sd">Scholarship of Discovery</option>
+            <option value="sa">Scholarship of Application</option>
+            <option value="st" selected>Scholarship of Teaching</option>
+            <option value="si">Scholarship of Integration</option>
+            <option value="nic">Not counted as Separate Intellectual Contribution</option>
+          </select><br><br>
+        <label> Refereed: </label>
+        <select name="refereed" id="refereed">
+          <option value="yes">Yes</option>
+          <option value="no" selected>No</option>
+        </select><br><br>
+        <label> Description: </label><br>
+        <textarea type="textarea" rows="10" cols ="80" name="description" maxlength="250"></textarea><br><br>
+        <input type="submit" name="submit" value="Submit"/>
+      </form>
+    </div> 
+    </body>
+    </html> 

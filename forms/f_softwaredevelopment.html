@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title> FacInfo </title>
+   <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main">
+      <h1> Software Development </h1><hr>
+      <p> Please fill all the fields below. </p>
+      <form action="p_softwaredevelopment.php" method="post">
+        <label> Software Tite: </label>
+        <input type="text" name="stitle"/><br>
+        
+        <label> Year Completed: </label>
+        <input type="text" name="yearCompleted"/><br>
+        
+        <label> Academic Year: </label>
+        <input type="text" name="ayear"/><br>
+       
+        <label> Research Type: </label>
+        <select name="research" id="research">
+            <option value="---">- - - </option>
+            <option value="SD">Scholarship of Discovery</option>
+            <option value="SA">Scholarship of Application</option>
+            <option value="ST">Scholarship of Teaching</option>
+            <option value="SI">Scholarship of Integration</option>
+            <option value="NIC">Not Counted as a Separate Intellectual Contribution</option>
+        </select><br>
+        
+        <label> Choose all that apply: </label>
+        <select name="options" multiple>
+            <option value="Is BOTH Refereed and Publicly Available">Is BOTH Refereed and Publicly Available</option>
+            <option value="Instructional Software">Instructional Software</option>
+            <option value="International Activity">International Activity</option>
+            <option value="Commercial Product">Commercial Product</option>
+            <option value="Software Revision">Software Revision</option>
+        </select><br>
+        <input type="submit" name="submit" value="Submit"/>
+      </form>
+    </div>  
+  </body>
+</html>

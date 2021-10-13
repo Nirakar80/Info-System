@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Chapter, Case, Reading, or Supplement Form</title>
+   <link rel = "stylesheet" href = "style.css">
+ </head>
+  <body>
+    <div class="main">
+      <h1>Chapter, Case, Reading, or Supplement Form</h1><hr>
+      <br>
+      <form action="p_chapters.php" method="post">
+        
+        <label> Category:</label>
+        <select name="category" id="category">
+          <option value="---">- - - </option>
+          <option value="Chapter">Chapter</option>
+          <option value="Case">Case</option>
+          <option value="Reading">Reading</option>
+          <option value="Supplement">Supplement</option>
+        </select><br><br>
+        
+        <label> Title:</label>
+        <input type="text" name="title" maxlength="100" size="15"/><br><br>
+        
+        <label>Status:</label>
+        <select name="status" id="status">
+          <option value="---">- - - </option>
+          <option value="Draft">Draft</option>
+          <option value="Proposed">Proposed</option>
+          <option value="Under Contract">Under Contract</option>
+          <option value="Under Review">Under Review</option>
+          <option value="Accepted">Accepted</option>
+          <option value="In Press">In Press</option>
+          <option value="Published">Published</option>
+          <option value="E-book">E-Book</option>
+        </select><br><br>
+        
+        <label> Year Contracted:</label>
+        <input type="text" name="yearContracted" maxlength="11" size="15"/><br><br>
+        
+        <label> Academic Year:</label>
+        <input type="text" name="academicYear" maxlength="11" size="15"/><br><br>
+        
+        <label>Research Type:</label>
+        <select name="researchType" id="researchType">
+          <option value="---">- - - </option>
+            <option value="Scholarship of Discovery">Scholarship of Discovery</option>
+            <option value="Scholarship of Application">Scholarship of Application</option>
+            <option value="Scholarship of Teaching">Scholarship of Teaching</option>
+            <option value="Scholarship of Integration">Scholarship of Integration</option>
+            <option value="Not counted as Separate Intellectual Contribution">Not counted as Separate Intellectual Contribution</option>
+          </select><br><br>
+        
+          <label> Refereed: </label>
+        <select name="refereed" id="refereed">
+          <option value="---">- - - </option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select><br><br>
+        
+        <label> Description: </label><br>
+        <textarea type="textarea" rows="11" cols ="80" name="description" maxlength="250"></textarea><br><br>
+        <input type="submit" name="submit" value="Submit"/>
+      </form>
+    </div> 
+    </body>
+    </html> 

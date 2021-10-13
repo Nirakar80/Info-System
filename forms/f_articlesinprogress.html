@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Articles in Progress Form</title>
+   <link rel = "stylesheet" href = "style.css">
+ </head>
+  <body>
+    <div class="main">
+      <h1> Articles in Progress Form</h1><hr>
+      <br>
+      <form action="p_articlesinprogress.php" method="post">
+        
+        <label> Title of Paper: </label>
+        <input  type="text" name="titleOfPaper" maxlength="100" size="100"/><br><br>
+        
+        <label> Academic Year:</label>
+        <input type="text" name="academicYear" maxlength="11" size="15"/><br><br>
+        
+        <label>Research Type:</label>
+        <select name="researchType" id="researchType">
+          <option value="---">- - - </option>
+          <option value="Scholarship of Discovery">Scholarship of Discovery</option>
+          <option value="Scholarship of Application">Scholarship of Application</option>
+          <option value="Scholarship of Teaching">Scholarship of Teaching</option>
+          <option value="Scholarship of Integration">Scholarship of Integration</option>
+          <option value="Not counted as Separate Intellectual Contribution">Not counted as Separate Intellectual Contribution</option>
+        </select><br><br>
+        
+        <label> Type of Activity:</label>
+        <select name="typeOfActivity" id="typeOfActivity">
+          <option value="---">- - - </option>
+          <option value="Circular">Circular/Newsletter</option>
+          <option value="Academic">Journal: Academic</option>
+          <option value="In House">Journal: In-House</option>
+          <option value="Pedagogical">Pedagogical</option>
+          <option value="Professional">Journal: Professional/Practitioner</option>
+          <option value="Note">Note/Abstract</option>
+          <option value="Review">Review/Critique/Discussion</option>
+          <option value="Technological">Technological</option>
+        </select><br><br>
+        
+        <label> Paper Description: </label><br>
+        <textarea type="textarea" rows="11" cols ="80" name="paperDescription" maxlength="250"></textarea><br><br>
+        <input type="submit" name="submit" value="Submit"/>
+      </form>
+    </div> 
+    </body>
+    </html>     
